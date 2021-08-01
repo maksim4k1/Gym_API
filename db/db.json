@@ -1,0 +1,66 @@
+{
+  "inventory": [
+    {
+      "id": "7973a9aa-f5fc-482d-9e45-d2dec3fe61f9",
+      "name": "Гиря",
+      "isInGoodContion": false,
+      "quantity": 16,
+      "weight": 15,
+      "producedBy": "TOP"
+    },
+    {
+      "id": "a8e7abd9-2b60-46d7-995f-ebcbb4542126",
+      "name": "Турник",
+      "isInGoodContion": true,
+      "quantity": 3,
+      "weight": 10,
+      "producedBy": "TOP"
+    },
+    {
+      "id": "253b6bba-a85e-4a4a-8623-ac2bb05b7569",
+      "name": "Штанга",
+      "isInGoodContion": true,
+      "quantity": 7,
+      "weight": 5,
+      "producedBy": "Strong"
+    },
+    {
+      "id": "c9b93b40-1bf6-4cfb-a2c6-a9d824fc191f",
+      "name": "Скакалка",
+      "isInGoodContion": true,
+      "quantity": 25,
+      "weight": 0,
+      "producedBy": "Spartak"
+    }
+  ],
+  "trainers": [
+    {
+      "id": "77c4412c-2d86-4844-80b2-1ec8d35d49b2",
+      "name": "Анастасия Сергевна",
+      "age": 32,
+      "specialization": "Йога",
+      "wage": 30000
+    },
+    {
+      "id": "7ccbc55a-aef6-4c63-ad7d-6893a1df2b5e",
+      "name": "Виталий Николаевич",
+      "age": 30,
+      "specialization": "Фитнес",
+      "wage": 25000
+    },
+    {
+      "id": "8ba91ee9-432d-4e0e-8a92-fd9e973cd2d8",
+      "name": "Александр Тихонович",
+      "age": 46,
+      "specialization": "Боевое самбо",
+      "wage": 35000
+    },
+    {
+      "id": "d03cb566-8e4e-4dfb-9b86-dfb263b4b4a6",
+      "name": "Дмитрий Анатольевич",
+      "age": 40,
+      "specialization": "Бокс",
+      "wage": 40000
+    }
+  ]
+}
