@@ -6,7 +6,8 @@
       "isInGoodContion": false,
       "quantity": 16,
       "weight": 15,
-      "producedBy": "TOP"
+      "producedBy": "TOP",
+      "image": "https://www.atlant-sport.ru/uploads/main_product_156086298864931600.jpg"
     },
     {
       "id": "a8e7abd9-2b60-46d7-995f-ebcbb4542126",
@@ -14,7 +15,8 @@
       "isInGoodContion": true,
       "quantity": 3,
       "weight": 10,
-      "producedBy": "TOP"
+      "producedBy": "TOP",
+      "image": "https://turnik33.ru/wp-content/uploads/2019/04/turnik-nastennyj-3-hvata-serija-professional.jpg"
     },
     {
       "id": "253b6bba-a85e-4a4a-8623-ac2bb05b7569",
@@ -22,7 +24,8 @@
       "isInGoodContion": true,
       "quantity": 7,
       "weight": 5,
-      "producedBy": "Strong"
+      "producedBy": "Strong",
+      "image": "https://www.atlant-sport.ru/uploads/main_product_151420052344677600.jpg"
     },
     {
       "id": "c9b93b40-1bf6-4cfb-a2c6-a9d824fc191f",
@@ -30,7 +33,8 @@
       "isInGoodContion": true,
       "quantity": 25,
       "weight": 0,
-      "producedBy": "Spartak"
+      "producedBy": "Spartak",
+      "image": "https://irecommend.ru/sites/default/files/product-images/1824/Skakalka.JPG"
     }
   ],
   "trainers": [
@@ -39,28 +43,32 @@
       "name": "Анастасия Сергевна",
       "age": 33,
       "specialization": "Йога",
-      "wage": 30000
+      "wage": 30000,
+      "image": "http://runet-id.com/files/photo/32/323885.jpg?t=1557834566"
     },
     {
       "id": "7ccbc55a-aef6-4c63-ad7d-6893a1df2b5e",
       "name": "Виталий Николаевич",
       "age": 30,
       "specialization": "Фитнес",
-      "wage": 25000
+      "wage": 25000,
+      "image": "https://vrukah.com/upload/resize_cache/main/2ca/526_716_2/2ca21b8b3c772a005c3adccd1cf1cc64.jpg"
     },
     {
       "id": "8ba91ee9-432d-4e0e-8a92-fd9e973cd2d8",
       "name": "Александр Тихонович",
       "age": 46,
       "specialization": "Боевое самбо",
-      "wage": 35000
+      "wage": 35000,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJZ80wccj0XhCCNcePGR3FCsnE7NJThHfKGw&usqp=CAU"
     },
     {
       "id": "d03cb566-8e4e-4dfb-9b86-dfb263b4b4a6",
       "name": "Дмитрий Анатольевич",
       "age": 40,
       "specialization": "Бокс",
-      "wage": 40000
+      "wage": 40000,
+      "image": "https://ставонко.рф/upload/resize_cache/iblock/cf2/414_452_1/Ostroukhov-D.A..jpg"
     }
   ]
 }

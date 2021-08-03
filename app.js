@@ -48,7 +48,8 @@ app.post('/gym/inventory/create', (req, res) => {
         body.isInGoodContion === undefined ||
         body.quantity === undefined ||
         body.weight === undefined ||
-        body.producedBy === undefined
+        body.producedBy === undefined ||
+        body.image === undefined
     ){
         res.status(400).json({
             errorCode: "ITEM_IN_BODY_NOT_FOUND",
@@ -59,7 +60,8 @@ app.post('/gym/inventory/create', (req, res) => {
         typeof(body.isInGoodContion) !== "boolean" ||
         typeof(body.quantity) !== "number" ||
         typeof(body.weight) !== "number" ||
-        typeof(body.producedBy) !== "string"
+        typeof(body.producedBy) !== "string" ||
+        typeof(body.image) !== "string"
     ){
         res.status(400).json({
             errorCode: "DATA_IS_NOT_VALID",
@@ -73,7 +75,8 @@ app.post('/gym/inventory/create', (req, res) => {
             isInGoodContion: body.isInGoodContion,
             quantity: body.quantity,
             weight: body.weight,
-            producedBy: body.producedBy
+            producedBy: body.producedBy,
+            image: body.image
         }).write();
 
         res.status(200).send("Объект добавлен успешно!");
@@ -127,13 +130,18 @@ app.put("/gym/inventory/update/:id", (req, res) => {
         
         item.producedBy = body.producedBy;
     }
+    if(body.image !== undefined){
+        if(typeof(body.image) !== "string") error400();
+        
+        item.image = body.image;
+    }
 
     // Error 400
     function error400(){
         res.status(400).json({
             errorCode: "DATA_IS_NOT_VALID",
             errorText: "Введены не верные данные",
-            errorSolution: `{ name: string, isInGoodContion: boolean, quantity: number, weight: number, producedBy: string }`
+            errorSolution: `{ name: string, isInGoodContion: boolean, quantity: number, weight: number, producedBy: string, image: string }`
         });
     }
 
@@ -201,7 +209,8 @@ app.post("/gym/trainers/add", (req, res) => {
         body.name === undefined ||
         body.age === undefined ||
         body.specialization === undefined ||
-        body.wage === undefined
+        body.wage === undefined ||
+        body.image === undefined
     ){
         res.status(400).json({
             errorCode: "ITEM_IN_BODY_NOT_FOUND",
@@ -211,7 +220,8 @@ app.post("/gym/trainers/add", (req, res) => {
         typeof(body.name) !== "string" ||
         typeof(body.age) !== "number" ||
         typeof(body.specialization) !== "string" ||
-        typeof(body.wage) !== "number"
+        typeof(body.wage) !== "number" ||
+        typeof(body.image) !== "string"
     ){
         res.status(400).json({
             errorCode: "DATA_IS_NOT_VALID",
@@ -225,6 +235,7 @@ app.post("/gym/trainers/add", (req, res) => {
             age: body.age,
             specialization: body.specialization,
             wage: body.wage,
+            image: body.image
         }).write();
 
         res.status(200).send("Объект добавлен успешно!");
@@ -273,13 +284,18 @@ app.put("/gym/trainers/update/:id", (req, res) => {
 
         item.wage = body.wage;
     }
+    if(body.image !== undefined){
+        if(typeof(body.image) !== "number") error400();
+
+        item.image = body.image;
+    }
 
     // Error 400
     function error400(){
         res.status(400).json({
             errorCode: "DATA_IS_NOT_VALID",
             errorText: "Введены не верные данные",
-            errorSolution: `{ name: string, age: number, specialization: string, wage: number }`
+            errorSolution: `{ name: string, age: number, specialization: string, wage: number, image: string }`
         });
     }
 
